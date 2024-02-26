@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tutorial_2.MainPage">
+
+    <VerticalStackLayout BackgroundColor="White">
+
+            
+        <Label x:Name="Current_Color"
+               Text="Please Choose a Color"
+               TextColor="Black"
+               Margin="10"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+
+        <Image x:Name="Color_Window"
+               Source="black_icon.png"
+               Margin="10"
+               HeightRequest="175"/>
+
+        <Grid>
+            <!-- Define the rows -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!-- Define the columns -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Define buttons -->
+            <Button x:Name="REDbtn"
+                    Clicked="color_choice"
+                    Text="Red"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    BackgroundColor="Red"
+                    TextColor="Black"
+                    Margin="5"/>
+
+            <Button x:Name="BLUEbtn"
+                    Clicked="color_choice"
+                    Text="Blue"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="Blue"
+                    TextColor="Black"
+                    Margin="5"/>
+
+            <Button x:Name="GREENbtn"
+                    Clicked="color_choice"
+                    Text="Green"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    BackgroundColor="Green"
+                    TextColor="Black"
+                    Margin="5"/>
+
+            <Button x:Name="YELLOWbtn"
+                    Clicked="color_choice"
+                    Text="Yellow"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    Margin="5"/>
+
+            <Button x:Name="PINKbtn"
+                    Clicked="color_choice"
+                    Text="Pink"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    BackgroundColor="Pink"
+                    TextColor="Black"
+                    Margin="5"/>
+
+            <Button x:Name="ORANGEbtn"
+                    Clicked="color_choice"
+                    Text="Orange"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    BackgroundColor="Orange"
+                    TextColor="Black"
+                    Margin="5"/>
+        </Grid>
+        <Rectangle
+            x:Name="Color_sample"
+            Fill="Red"
+            WidthRequest="50"
+            HeightRequest="50"
+            Margin="5"/>
+        <Button
+            x:Name="Submit_btn"
+            Text="Submit"
+            IsEnabled="False"
+            WidthRequest="150"
+            HeightRequest="50"
+            Margin="10"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
