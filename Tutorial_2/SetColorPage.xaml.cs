@@ -1,13 +1,13 @@
 ﻿namespace Tutorial_2
 {
-    public partial class MainPage : ContentPage
+    public partial class SetColorPage : ContentPage
     {
         int count = 0;
         bool triggered;
         string color_text = string.Empty;
         string color_image_path = string.Empty;
 
-        public MainPage()
+        public SetColorPage()
         {
             InitializeComponent();
         }
